@@ -13,14 +13,13 @@ export const mavenPro = Maven_Pro({
   weight: ['400', '700'],
 })
 
-export const metadata = {
-  title: 'Andrea Christela',
-  description: 'Developer portfolio',
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Title</title>
+        <meta name='Andrea Christela' content='Developer portfolio' />
+      </head>
       <body className={raleway.className}>
         <Navbar />
         {children}

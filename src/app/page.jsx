@@ -107,7 +107,7 @@ export default function Home() {
                     
                     <div className="text-cosmos text-xl md:w-[80%]">
                       <p className={mavenPro.className}>
-                        The official Programmers' Den website for the Academic Year of 2023.
+                        The official Programmers&#39; Den website for the Academic Year of 2023.
                         Developed using ReactJS, Chakra UI and Google Firebase.
                       </p>
                     </div>
@@ -127,7 +127,7 @@ export default function Home() {
                          className="items-center justify-center">
                         <a>
                           <button className="bg-violet-700 p-4 font-bold rounded-2xl">
-                            LEARN MORE `&gt;`
+                            LEARN MORE &gt;
                           </button>
                         </a>
                       </motion.div>

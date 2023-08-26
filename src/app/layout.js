@@ -17,11 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Title</title>
+        <title>Andrea Christela</title>
         <meta name='Andrea Christela' content='Developer portfolio' />
       </head>
       <body className={raleway.className}>
         <Navbar />
+        <div className="min-h-[50px] md:min-h-0" />
         {children}
       </body>
     </html>

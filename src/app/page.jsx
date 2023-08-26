@@ -8,10 +8,11 @@ import StarBlue1 from '../../public/Star-blue1.png';
 import StarPink1 from '../../public/Star-pink1.png';
 import OrgDesktop from '../../public/org-desktop.png';
 import Star from '../../public/Star 2.png';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <div className="-z-20 flex flex-col-reverse md:flex-row w-full h-[85vh] items-center">
         <motion.div
         initial={{ opacity: 0, y: 20, x: -5 }}
@@ -23,14 +24,14 @@ export default function Home() {
           <motion.div 
           animate={{ y: [-10,0,-10] }}
           transition={{ repeat: Infinity}}
-          className="-z-30 h-[70%] w-[100px] md:w-[10vw] right-9 bottom-2 md:bottom-24 absolute">
+          className="-z-30 h-[60%] w-[100px] md:w-[10vw] right-9 bottom-2 md:bottom-24 absolute">
             <Image src={StarBlue1} alt="Star blue" style={{objectFit: 'contain'}} />
           </motion.div>
 
           <motion.div 
           animate={{ y: [0,15,0] }}
           transition={{ repeat: Infinity}}
-          className="h-[30%] w-[100px] md:w-[10vw] left-9 bottom-40 md:bottom-3 absolute">
+          className="h-[20%] w-[100px] md:w-[10vw] left-9 bottom-40 md:bottom-3 absolute">
             <Image src={StarPink1} alt="Star pink" style={{objectFit: 'contain'}} />
           </motion.div>
 
@@ -41,14 +42,14 @@ export default function Home() {
         animate={{ opacity: 1, x: 0}}
         transition={{ duration: 0.5}}
         className="h-[50%] space-y-4 md:h-[100%] w-[80%] md:w-[40%] flex flex-col mt-12 md:mt-0 md:justify-center md:ml-5">
-          <div className="font-bold text-transparent text-3xl xl:text-5xl bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text">
+          <div className="font-bold text-transparent text-2xl xl:text-4xl bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text">
             <h1 className={mavenPro.className}>Andrea Christela Adalem</h1>
           </div>
-          <div className="w-[80%] md:w-[50%]">
-            <h2 className="text-xl text-cyan-300 align-left font-bold">Software Developer</h2>
+          <div className="w-[80%] md:w-[60%]">
+            <h2 className="text-lg lg:text-2xl text-cyan-300 align-left font-bold">Software Developer</h2>
           </div>
-          <div className="w-[90%] md:w-[70%]">
-            <p>Hi there! Im Andrea, I enjoy working on projects. Building with code and Designing with heart.</p>
+          <div className="w-[80%] md:w-[70%]">
+            <p>Hi there! Im Andrea, I enjoy working on projects. Building with computer tools and Designing with heart.</p>
           </div>
         </motion.div>
       </div>
@@ -69,7 +70,7 @@ export default function Home() {
           </motion.div>
 
           <div className="flex w-[100%] justify-center pb-[100px]">
-            <div className="flex flex-col md:flex-row-reverse w-[95%] space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+            <div className="flex items-center flex-col md:flex-row-reverse w-[95%] space-x-0 md:space-x-4 space-y-4 md:space-y-0">
             
               <div className="w-[100%] md:w-[70%] flex items-center">
                   <motion.div
@@ -97,12 +98,12 @@ export default function Home() {
               </div>
 
               <motion.div 
-              initial={{ opacity: 0, x: 60, y: 20 }}
+              initial={{ opacity: 0.5, x: 60, y: 20 }}
               whileInView={{ opacity: 1, x: 0  }}
               transition={{ duration: 0.5}}
               viewport={{ once: true, amount: 0.7}}
-              className="w-[100%] md:w-[50%] ml-[5vw] flex lg:items-center">
-                  <div className="space-y-4">
+              className="w-[80%] md:w-[50%] ml-[5vw] flex lg:items-center">
+                  <div className="space-y-8">
                     <h3 className="text-purple-800 text-3xl font-bold">College-based Organization Website</h3>
                     
                     <div className="text-cosmos text-xl md:w-[80%]">
@@ -116,7 +117,7 @@ export default function Home() {
                       <motion.div
                          whileHover={{ scale: 1.2 }}
                          className="items-center justify-center">
-                        <a>
+                        <a href="https://progden.web.app/" target="_blank" rel="noopener noreferrer">
                             <button className="border-2 border-violet-700 p-3.5 text-violet-700 hover:text-white font-bold rounded-2xl">
                               VISIT WEBSITE
                             </button>
@@ -125,11 +126,11 @@ export default function Home() {
                       <motion.div
                          whileHover={{ scale: 1.2 }}
                          className="items-center justify-center">
-                        <a>
+                        <Link href="/projects">
                           <button className="bg-violet-700 p-4 font-bold rounded-2xl">
-                            LEARN MORE &gt;
+                            VIEW MORE &gt;
                           </button>
-                        </a>
+                        </Link>
                       </motion.div>
                     </div>
                   </div>

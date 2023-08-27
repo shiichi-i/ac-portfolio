@@ -31,7 +31,7 @@ export default function About() {
         <div className="w-[100vw] flex flex-col items-center justify-center">
           <div className="flex flex-col md:flex-row">
             <div className="w-[250px] m-4 flex">
-              <Image src={Me} style={{objectFit: 'contain'}} className="shadow-lg rounded-tr-full rounded-tl-full rounded-bl-full" />
+              <Image src={Me} alt="Profile Photo" style={{objectFit: 'contain'}} className="shadow-lg rounded-tr-full rounded-tl-full rounded-bl-full" />
             </div>
             <div className="space-y-3">
               <p className="md:pt-[190px]">Hello! I&apos;m Andrea Adalem</p>
@@ -53,7 +53,7 @@ export default function About() {
               </li>
               <li className="flex flex-row space-x-4">
                 <GiGraduateCap size="25px" color="#f472b6" />
-                <p>Bachelor's Degree, Technology</p>
+                <p>Bachelor&apos;s Degree, Technology</p>
               </li>
               <li className="flex flex-row space-x-4">
                 <RiShieldUserFill size="25px" color="#f472b6" />

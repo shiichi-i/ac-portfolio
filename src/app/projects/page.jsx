@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image';
 import Progden from '../../../public/progden-preview.jpg';
 import Pebbles from '../../../public/pebbles-preview.jpg';
 import Ace from '../../../public/ace-preview.jpg';
@@ -8,14 +7,16 @@ import { mavenPro } from '../layout';
 
 export default function Projects() {
     return (
-      <main>
+      <main className="overflow-hidden">
         <motion.div
         animate={{ opacity: [0,1], scaleY: [0,1] }}
         transition={{ duration: 2, type: "spring", stiffness: 100 }}
         className="bg-gradient-to-b from-violet-400 to-cosmos absolute w-full top-0 h-[100vw] mt-[-50%] opacity-50 -z-40 rounded-full" />
         <div className="space-y-4">
           <div className="w-[100] flex justify-center py-3">
-            <h1 className="font-bold text-3xl mt-4">MY WORKS</h1>
+            <motion.div animate={{ opacity: [0,1], y: [15,0]}} transition={{ duration: 1}}>
+              <h1 className="font-bold text-3xl mt-4 text-transparent bg-gradient-to-r from-[#dda2da] via-[#a6cdce] to-[#82bde4] bg-clip-text">MY WORKS</h1>
+            </motion.div>
           </div>
 
           <div className="w-[100%] flex flex-col md:flex-row flex-wrap justify-center items-center">
@@ -109,16 +110,16 @@ export default function Projects() {
                     <div className="text-sm p-2 px-4 m-1 border border-stardust rounded-full">
                       Figma
                     </div>
-                    <div className="text-sm p-2 px-4 m-1 border border-cyan-300 text-cyan-300 rounded-full">
+                    <div className="text-sm p-2 px-4 m-1 border border-purple-600 text-purple-600 rounded-full">
                       Unity C#
                     </div>
-                    <div className="text-sm p-2 px-4 m-1 border border-cyan-300 text-cyan-300 rounded-full">
+                    <div className="text-sm p-2 px-4 m-1 border border-purple-600 text-purple-600 rounded-full">
                       Blender 3D
                     </div>
                   </div>
                   <h6>
                     Developed a 3D virtual robotics education platform using Unity as the thesis/capstone
-                    project for my bachelors degree.Then developed a website using React JS to showcase 
+                    project for my bachelors degree. Then developed a website using React JS to showcase 
                     and offer download for users.
                   </h6>
                   <div className="flex space-x-2 justify-end pt-8">

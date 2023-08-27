@@ -41,23 +41,34 @@ export default function Home() {
         initial={{ opacity: 0, x: -70}}
         animate={{ opacity: 1, x: 0}}
         transition={{ duration: 0.5}}
-        className="h-[50%] space-y-4 md:h-[100%] w-[80%] md:w-[40%] flex flex-col mt-12 md:mt-0 md:justify-center md:ml-5">
+        className="h-[50%] space-y-2 md:h-[100%] w-[80%] md:w-[40%] flex flex-col mt-12 md:mt-0 md:justify-center md:ml-5">
           <div className="font-bold text-transparent text-2xl xl:text-4xl bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text">
             <h1 className={mavenPro.className}>Andrea Christela Adalem</h1>
           </div>
           <div className="w-[80%] md:w-[60%]">
             <h2 className="text-lg lg:text-2xl text-cyan-300 align-left font-bold">Software Developer</h2>
           </div>
-          <div className="w-[80%] md:w-[70%]">
+          <div className="w-[80%] md:w-[70%] pb-6">
             <p>Hi there! Im Andrea, I enjoy working on projects. Building with computer tools and Designing with heart.</p>
           </div>
+            <button className="hover:ml-4 p-2 border border-white w-[200px] rounded-lg bg-white/20 backdrop-blur-sm">
+              <Link href="/about" className="flex flex-row">
+              Get to Know Me
+              <div className="ml-2 h-[25px] w-[25px]">
+                <svg aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+              </div>
+              </Link>
+            </button>
         </motion.div>
       </div>
 
         <div className="w-[100%] mt-[-10vh] md:mt-[-35vh] z-10">
-          <Image src={BlueCurve} alt="section top design" style={{objectFit: 'contain'}} />
+          <Image src={BlueCurve} alt="section top design" style={{objectFit: 'cover', width: '100vw'}} />
         </div>
-        <div className="w-[100%] bg-gradient-to-b from-[#2CB6C9] to-[#0EE9DC] from-65% via-10% z-10">
+
+        <div className="w-[100%] m-0 bg-gradient-to-b from-[#2CB6C9] to-[#0EE9DC] from-65% via-10% z-10">
           <motion.div 
            initial={{ opacity: 0, scale: 0.5 }}
            whileInView={{ opacity: 1, scale: 1  }}

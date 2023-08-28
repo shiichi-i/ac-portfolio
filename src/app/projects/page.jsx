@@ -12,7 +12,7 @@ export default function Projects() {
         animate={{ opacity: [0,1], scaleY: [0,1] }}
         transition={{ duration: 2, type: "spring", stiffness: 100 }}
         className="bg-gradient-to-b from-violet-400 to-cosmos absolute w-full top-0 h-[100vw] mt-[-50%] opacity-50 -z-40 rounded-full" />
-        <div className="space-y-4">
+        <div className="space-y-4 pb-12">
           <div className="w-[100] flex justify-center py-3">
             <motion.div animate={{ opacity: [0,1], y: [15,0]}} transition={{ duration: 1}}>
               <h1 className="font-bold text-3xl mt-4 text-transparent bg-gradient-to-r from-[#dda2da] via-[#a6cdce] to-[#82bde4] bg-clip-text">MY WORKS</h1>

@@ -12,11 +12,15 @@ import { SiReact } from 'react-icons/si';
 import { SiUnity } from 'react-icons/si';
 import { SiFigma } from 'react-icons/si';
 import { SiBlender } from 'react-icons/si';
+import Nagi from '../../../public/naho.png';
+import { SiLinkedin } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
+import { BiLogoGmail } from 'react-icons/bi';
 
 
 export default function About() {
     return (
-      <main>
+      <main className="overflow-hidden">
         <motion.div
         animate={{ opacity: [0,1], scaleY: [0,1] }}
         transition={{ duration: 2, type: "spring", stiffness: 100 }}
@@ -67,25 +71,38 @@ export default function About() {
           </div>
 
           <div className="relative -z-30 mt-12 w-[100%] flex justify-center py-8" style={{background: 'radial-gradient(#818cf8, #67e8f9)'}}>
-            <div className="-z-20 absolute right-0 top-[-12%] md:top-[-25%] bg-cyan-400/80 w-[20%] h-[25%] md:h-[50%]  rounded-l-full"/>
-            <div className="-z-20 absolute left-0 bottom-[-12%] md:bottom-[-25%] bg-cyan-400/80 w-[20%] h-[25%] md:h-[50%] rounded-r-full"/>
+            
+            <motion.div
+            initial={{ opacity: 0.5, scaleY: 0.1 }}
+            whileInView={{ opacity: 1, scaleY: 1  }}
+            transition={{ duration: 0.2}}
+            viewport={{ once: true, amount: 0.7}}
+            className="-z-20 absolute right-0 top-[-12%] md:top-[-25%] bg-cyan-400/80 w-[20%] h-[25%] md:h-[50%]  rounded-l-full"/>
+            <motion.div
+            initial={{ opacity: 0.5, scaleY: 0.1 }}
+            whileInView={{ opacity: 1, scaleY: 1  }}
+            transition={{ duration: 0.5}}
+            viewport={{ once: true, amount: 0.7}}
+            className="-z-20 absolute left-0 bottom-[-12%] md:bottom-[-25%] bg-cyan-400/80 w-[20%] h-[25%] md:h-[50%] rounded-r-full"/>
+            
+            
             <div className="mt-8 font-bold text-2xl flex flex-col text-violet-900 items-center">
               <div className="text-cosmos bg-clip-text">
                 <h5 className={mavenPro.className}>TECHNOLOGIES I USE:</h5>
               </div>
-              <div className="w-[60vw] m-4">
+              <div className="w-[95vw] md:w-[60vw] m-4">
 
                 <div className="flex flex-col items-center">
                   <h6 className="font-bold text-lg text-violet-900 "></h6>
                   <div className="w-[100%] flex flex-row flex-wrap items-center justify-center">
                     
 
-                    <div className="flex flex-col items-center w-[100px] m-4">
-                      <SiNextdotjs size="100px" color="#4c1d95" />
+                    <div className="flex flex-col items-center w-[60px] md:w-[100px] m-4">
+                      <SiNextdotjs size={{base: '65px', md:'100px'}} color="#4c1d95" />
                       <p className="font-regular text-sm mt-2">Next JS</p>
                     </div>
-                    <div className="flex flex-col items-center w-[100px] m-4">
-                      <SiReact size="100px" color="#4c1d95" />
+                    <div className="flex flex-col items-center w-[60px] md:w-[100px] m-4">
+                      <SiReact size={{base: '65px', md:'100px'}} color="#4c1d95" />
                       <p className="font-regular text-sm mt-2">React JS</p>
                     </div>
 
@@ -95,16 +112,16 @@ export default function About() {
                   <div className="w-[100%] flex flex-row flex-wrap items-center justify-center">
                     
 
-                    <div className="flex flex-col items-center w-[100px] m-4">
-                      <SiFigma size="100px" color="#4c1d95" />
+                    <div className="flex flex-col items-center w-[60px] md:w-[100px] m-4">
+                      <SiFigma size={{base: '65px', md:'100px'}} color="#4c1d95" />
                       <p className="font-regular text-sm mt-2">Figma</p>
                     </div>
-                    <div className="flex flex-col items-center w-[100px] m-4">
-                      <SiBlender size="100px" color="#4c1d95" />
+                    <div className="flex flex-col items-center w-[60px] md:w-[100px] m-4">
+                      <SiBlender size={{base: '65px', md:'100px'}} color="#4c1d95" />
                       <p className="font-regular text-sm mt-2">Blender 3D</p>
                     </div>
-                    <div className="flex flex-col items-center w-[100px] m-4">
-                      <SiUnity size="100px" color="#4c1d95" />
+                    <div className="flex flex-col items-center w-[60px] md:w-[100px] m-4">
+                      <SiUnity size={{base: '65px', md:'100px'}} color="#4c1d95" />
                       <p className="font-regular text-sm mt-2">C#</p>
                     </div>
 
@@ -115,8 +132,49 @@ export default function About() {
           </div>
 
           
-          <div className="min-h-[500px] w-[100%]"></div>
-            
+          <div className="w-[100%] flex flex-col md:flex-row items-center">
+            <div className="w-[100%] md:w-[70%] flex justify-center items-center">
+              <div className="p-12 space-y-4">
+                <div className="flex flex-row flex-wrap space-x-5">
+                  <h4 className="text-4xl">Links</h4>
+                  <a href="https://www.linkedin.com/in/andrea-adalem/" target="_blank">
+                    <SiLinkedin size="40" />
+                  </a>
+                  <a href="https://github.com/shiichi-i" target="_blank">
+                    <SiGithub size="40" />
+                  </a>
+                </div>
+
+                <div className="hover:ml-4 p-2 border border-white w-[155px] rounded-lg bg-white/20 backdrop-blur-sm">
+                  <a href="https://drive.google.com/file/d/16egAeDsH7mu_M2H2la9DvIYKKvP9bxhf/view" target="_blank" className="flex flex-row">
+                  Resume
+                  <div className="ml-2 h-[25px] w-[25px]">
+                    <svg aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" strokeLinecap="round" strokeLinejoin="round"></path>
+                    </svg>
+                  </div>
+                  </a>
+                </div>
+
+
+
+                <h6 className="text-cyan-300 pt-8">Contact Me:</h6>
+                <div className="flex flex-row">
+                  <BiLogoGmail size="30" color="#67e8f9" />
+                  <p className="ml-5 text-lg md:text-2xl">adalem.andrea@gmail.com</p>
+                </div>
+                
+              </div>
+            </div>
+            <motion.div
+            initial={{ opacity: 0.5, x: 60, y: 20 }}
+            whileInView={{ opacity: 1, x: 0, y: 1  }}
+            transition={{ duration: 0.5}}
+            viewport={{ once: true, amount: 0.5}}
+            className="w-[60%] md:w-[30%] mb-[-60px] md:ml-[-150px] -z-20">
+              <Image src={Nagi} alt="Drawing" style={{objectFit: 'contain'}} />
+            </motion.div>
+          </div>
         </div>
       </main>
     )

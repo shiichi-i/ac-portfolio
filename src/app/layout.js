@@ -1,6 +1,7 @@
-import './globals.css'
-import { Raleway, Maven_Pro } from 'next/font/google'
-import Navbar from '@/components/Navbar'
+import './globals.css';
+import { Raleway, Maven_Pro } from 'next/font/google';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const raleway = Raleway({
    subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className="min-h-[50px] md:min-h-0" />
         {children}
+        <Footer className="z-20" />
       </body>
     </html>
   )

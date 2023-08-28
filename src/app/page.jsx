@@ -9,6 +9,9 @@ import StarPink1 from '../../public/Star-pink1.png';
 import OrgDesktop from '../../public/org-desktop.png';
 import Star from '../../public/Star 2.png';
 import Link from 'next/link';
+import { BiLogoGmail } from 'react-icons/bi';
+import { SiLinkedin } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -46,7 +49,7 @@ export default function Home() {
             <h1 className={mavenPro.className}>Andrea Christela Adalem</h1>
           </div>
           <div className="w-[80%] md:w-[60%]">
-            <h2 className="text-lg lg:text-2xl text-cyan-300 align-left font-bold">Software Developer</h2>
+            <h2 className="text-lg lg:text-2xl text-cyan-300 align-left font-bold">Developer</h2>
           </div>
           <div className="w-[80%] md:w-[70%] pb-6">
             <p>Hi there! Im Andrea, I enjoy working on projects. Building with computer tools and Designing with heart.</p>
@@ -151,8 +154,32 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[500px]">
-          <p>Hello</p>
+        <div className="w-[100%] flex flex-col items-center justify-center mt-[-9px] md:mt-[-12px]">
+          
+          <motion.div
+          initial={{ opacity: 0.5, y: -60 }}
+          whileInView={{ opacity: 1, y: 0  }}
+          transition={{ duration: 1}}
+          viewport={{ once: true, amount: 0.7}}>
+            <h5 className="font-bold text-5xl md:text-7xl text-[#0EE9DC] mb-12">LET&apos;S CONNECT</h5>
+          </motion.div>
+
+          <p className="text-lg text-sky-500">Leave a message:</p>
+          <div className="flex flex-row m-5">
+            <BiLogoGmail size="30" color="#67e8f9" />
+            <p className="ml-5 text-lg md:text-2xl">adalem.andrea@gmail.com</p>
+          </div>
+          <div className="flex flex-row pb-12">
+            <div className="flex flex-row flex-wrap space-x-5">
+                <a href="https://www.linkedin.com/in/andrea-adalem/" target="_blank">
+                  <SiLinkedin size="40" />
+                </a>
+                <a href="https://github.com/shiichi-i" target="_blank">
+                  <SiGithub size="40" />
+                </a>
+              </div>
+          </div>
+           
         </div>
       
 

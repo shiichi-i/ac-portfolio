@@ -41,8 +41,13 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://drive.google.com/file/d/16egAeDsH7mu_M2H2la9DvIYKKvP9bxhf/view" target="_blank">
+                                    <a href="https://read.cv/andrea.christela" target="_blank">
                                         CV
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/file/d/16egAeDsH7mu_M2H2la9DvIYKKvP9bxhf/view" target="_blank">
+                                        Resume PDF
                                     </a>
                                 </li>
                             </ul>

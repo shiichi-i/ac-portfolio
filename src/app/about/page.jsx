@@ -55,7 +55,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-5 p-4 w-[75%] md:w-[600px] bg-blue-500/5 rounded-xl">
+        <div className="mt-5 p-4 w-[75%] md:w-[600px] bg-violet-500/25 rounded-xl">
           <p className="m-5">Work experience:</p>
           <ul className="ml-9 mt-8 space-y-4">
             <li className="flex flex-row space-x-4">
